@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        public static void Main()
+
+
+        {
+            Console.WriteLine("Roz Hay Sen VardKonid");
+
+            string a = Console.ReadLine();
+            string sen = salsen(a);
+            Console.WriteLine("Sen");
+
+        }
+        public static string salsen(string a)
+        {
+            int b = Convert.ToInt32(a);
+            int sal, mah;
+            for (sal = 0; b >= 365; sal++)
+                b -= 365;
+            for (mah = 0; b >= 30; mah++)
+                b -= 365;
+
+
+            string sen = Convert.ToString(b) + Convert.ToString(mah) + Convert.ToString(sal);
+            return sen;
+        }
+
+    }
+
+
+
+
+
+
+
+

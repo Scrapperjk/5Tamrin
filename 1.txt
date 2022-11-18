@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Vared Konid");
+            string i = Console.ReadLine();
+            int x = Convert.ToInt32(i);
+            double a = P1(x);
+            double b = P2(x);
+            Console.WriteLine(b);
+            Console.WriteLine(a);
+        }
+
+        private static double P1(double f)
+        {
+            double j = Math.Pow(f, 2);
+            return j;
+        }
+        private static double P2(double g)
+        {
+            double k = Math.Pow(g, 3);
+            return k;
+            
+        }
+        
+    }
+
+}
+    
+
